@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blog Home</title>
+</head>
+<body>
+    <h1>Blog Posts</h1>
+    <a href="/post/new">Create New Post</a>
+    <ul>
+        {{range .}}
+        <li>
+            <a href="/post/view?id={{.ID}}">{{.Title}}</a>
+        </li>
+        {{end}}
+    </ul>
+</body>
+</html>
